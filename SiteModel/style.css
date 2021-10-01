@@ -1,0 +1,11 @@
+body {
+    width: 1440px;
+}
+/* .container {
+    min-width: 100%;
+} */
+.title {
+    min-width: 136px;
+    font-weight: bold;
+    color: #5671F6;
+}
