@@ -17,7 +17,7 @@ body {
 *{box-sizing: border-box;
 }
 .block div {
-    border: 1px solid green;
+    border: 1px solid blue;
     padding: 16px;
 border-radius: 5px;
 }
