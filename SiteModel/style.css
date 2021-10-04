@@ -1,15 +1,25 @@
-/* body {
-    width: 1440px;
-}
+
 .container {
-    min-width: 100%;
-} */
+    width: 1440px;
+} 
 .title {
-    max-width: 136px;
+    min-width: 136px;
+    min-height: 104px;
     font-weight: bold;
     color: #5671F6;
 }
 .search {
     color: #A5A5A5;
+}
+.search, .menu, .reg, .log {
     font-size: 18px;
+}
+.reg {
+    min-width: 176px;
+    color: #5671F6;
+}
+.log {
+    min-width: 151px;
+    background-color: #5671F6;
+    color: #ffffff;
 }
