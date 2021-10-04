@@ -1,11 +1,15 @@
-body {
+/* body {
     width: 1440px;
 }
-/* .container {
+.container {
     min-width: 100%;
 } */
 .title {
-    min-width: 136px;
+    max-width: 136px;
     font-weight: bold;
     color: #5671F6;
+}
+.search {
+    color: #A5A5A5;
+    font-size: 18px;
 }
