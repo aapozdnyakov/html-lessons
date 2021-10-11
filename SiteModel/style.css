@@ -4,7 +4,7 @@
 } 
 .center {
     padding-top: 80px;
-    width: 100%;
+    width: 1440px;
     height: 699px;
 }
 .title {
@@ -37,15 +37,13 @@
 .poster {
     min-width: 358px;
     min-height: 464px;
-       /* padding-left: 153px; */
-}
+    }
 
 .player {
     border-bottom-right-radius: 7px ;
     border-bottom-left-radius: 7px;
     height: 75px;
-    /* margin-left: 153px; */
-    width: 358px;
+      width: 358px;
 }
 .play-button {
     min-width: 25px;
@@ -104,4 +102,50 @@
 }
 p {
     margin-bottom: 0px;
+}
+.bottom {
+    height: 493px;
+    padding-top: 70px;
+    padding-left: 153px;
+}
+.cast {
+    padding-top: 60px;
+}
+.cast-line-one, .cast-line-two {
+    width: 100%;
+    height: 100px;
+}
+.cast-line-one {
+    margin-bottom: 35px;
+}
+.actor {
+    width: 191px;
+    height: 100%;
+    padding-left: 20px;
+}
+.actor b {
+    color: #5671F6;
+}
+.actor p {
+    color: #A5A5A5;
+}
+.footer {
+    background-color: #F3F3F3;
+    height: 423px;
+    padding-left: 153px;
+    padding-top: 70px;
+}
+.news {
+    padding-top: 65px;
+    width: 1130px;
+    height: 225px;
+
+}
+.news-content {
+    width: 260px;
+    height: 160px;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 13.5px;
+    line-height: 14px;
 }
