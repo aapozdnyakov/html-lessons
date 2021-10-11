@@ -1,11 +1,129 @@
-body {
-    width: 1440px;
+
+.container {
+    max-width: 1110px !important;
+} 
+.row {
+    width: 100%;
 }
-/* .container {
-    min-width: 100%;
-} */
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+.center {
+    padding-top: 80px;
+    width: 1440px;
+    height: 699px;
+}
 .title {
     min-width: 136px;
+    height: 104px;
     font-weight: bold;
     color: #5671F6;
+}
+.search {
+    color: #A5A5A5;
+}
+.search, .menu, .reg, .log {
+    font-size: 18px;
+}
+.reg {
+    min-width: 176px;
+    color: #5671F6;
+}
+.log {
+    min-width: 151px;
+    background-color: #5671F6;
+    color: #ffffff;
+}
+.poster {
+    min-width: 358px;
+    min-height: 464px;
+    }
+
+.player {
+    border-bottom-right-radius: 7px ;
+    border-bottom-left-radius: 7px;
+    height: 75px;
+      width: 358px;
+}
+.play-button {
+    min-width: 25px;
+    
+    padding-left: 81px;
+}
+.play-trailer {
+    padding-left: 14px;
+    color: #5671F6;
+}
+.right-center {
+    padding-left: 60px;
+}
+.film-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 42px;
+}
+.descript {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 55px;
+}
+.spec-title {
+    max-width: 100px;
+}
+
+.pers {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #5671F6;
+}
+p {
+    margin-bottom: 0px;
+}
+.bottom {
+    height: 493px;
+    padding-top: 70px;
+}
+.cast {
+    padding-top: 60px;
+}
+.cast-line-one, .cast-line-two {
+    width: 100%;
+    height: 100px;
+}
+.cast-line-one {
+    margin-bottom: 35px;
+}
+.actor {
+    width: 191px;
+    height: 100%;
+    padding-left: 20px;
+}
+.actor b {
+    color: #5671F6;
+}
+.actor p {
+    color: #A5A5A5;
+}
+.news {
+    padding-top: 65px;
+    width: 1130px;
+    height: 225px;
+
+}
+.news-content {
+    width: 260px;
+    height: 160px;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 14px;
+}
+footer {
+    background-color: #F3F3F3;
+    height: 423px;
 }
