@@ -2,9 +2,7 @@
 .container {
     max-width: 1110px !important;
 } 
-.row {
-    width: 100%;
-}
+
 body {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -21,6 +19,11 @@ body {
 }
 .search {
     color: #A5A5A5;
+
+}
+.form-control:focus {
+    border: none;
+    box-shadow: none !important;
 }
 .search, .menu, .reg, .log {
     font-size: 18px;
