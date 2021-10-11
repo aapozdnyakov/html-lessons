@@ -5,7 +5,9 @@
 .row {
     width: 100%;
 }
-
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
 .center {
     padding-top: 80px;
     width: 1440px;
@@ -32,12 +34,6 @@
     background-color: #5671F6;
     color: #ffffff;
 }
-.left-center {
-    
-    /* padding-left: 153px; */
-    /* float: left; */
-
-}
 .poster {
     min-width: 358px;
     min-height: 464px;
@@ -59,8 +55,6 @@
     color: #5671F6;
 }
 .right-center {
-    /* width: 602px; */
-    /* margin-left: 511px; */
     padding-left: 60px;
 }
 .film-title {
@@ -74,28 +68,10 @@
     font-weight: 500;
     padding-bottom: 55px;
 }
-.spec-items {
-    width: 100px;
-    float: left;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
+.spec-title {
+    max-width: 100px;
 }
-.spec-data {
-    margin-left: 10px;
-    width: 140px;
-    font-size: 16px;
-    line-height: 30px;
-    float: left;
-}
-.spec-spacer {
-    float: left;
-    width: 40px;
-    height: 100px;
-}
-.spec {
-    padding-bottom: 134px;
-}
+
 .pers {
     width: 100px;
     height: 100px;
@@ -111,7 +87,6 @@ p {
 .bottom {
     height: 493px;
     padding-top: 70px;
-    /* padding-left: 153px; */
 }
 .cast {
     padding-top: 60px;
@@ -134,12 +109,6 @@ p {
 .actor p {
     color: #A5A5A5;
 }
-/* .footer {
-    background-color: #F3F3F3;
-    height: 423px;
-    padding-left: 153px;
-    padding-top: 70px;
-} */
 .news {
     padding-top: 65px;
     width: 1130px;
