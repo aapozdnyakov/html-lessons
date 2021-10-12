@@ -31,11 +31,24 @@ body {
 .reg {
     min-width: 176px;
     color: #5671F6;
+    background-color: #ffffff;
+}
+.reg:hover {
+    text-decoration: underline;
 }
 .log {
     min-width: 151px;
     background-color: #5671F6;
     color: #ffffff;
+}
+.log:hover {
+    text-decoration: underline;
+}
+.menu-items {
+    background-color: #ffffff;
+}
+.menu-items:hover {
+    text-decoration: underline;
 }
 .poster {
     min-width: 358px;
@@ -91,8 +104,14 @@ p {
     height: 493px;
     padding-top: 70px;
 }
+.bottom span:hover {
+color: black;
+}
 .cast {
     padding-top: 60px;
+}
+.cast a {
+    text-decoration: none;
 }
 .cast-line-one, .cast-line-two {
     width: 100%;
@@ -125,6 +144,9 @@ p {
     padding: 30px;
     font-size: 13px;
     line-height: 14px;
+}
+.news-content b:hover {
+    text-decoration: underline;
 }
 footer {
     background-color: #F3F3F3;
