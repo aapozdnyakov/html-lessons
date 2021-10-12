@@ -19,8 +19,9 @@ body {
 }
 .search {
     color: #A5A5A5;
-
-}
+    }
+    .search::-webkit-input-placeholder {color:#A5A5A5;}
+    
 .form-control:focus {
     border: none;
     box-shadow: none !important;
@@ -42,12 +43,13 @@ body {
     color: #ffffff;
 }
 
-.menu-items {
+.menu-item {
     color: black;
     text-decoration: none;
 }
-.menu-items:hover {
+a.menu-item:hover {
     text-decoration: underline;
+    color: #5671F6;
 }
 .poster {
     min-width: 358px;
@@ -123,9 +125,8 @@ color: black;
 .actor p {
     color: #A5A5A5;
 }
-.actor div:hover {
+.actor:hover b, .actor:hover p {
     text-decoration: underline;
-    text-decoration-color: b;
 }
 
 .news {
