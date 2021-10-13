@@ -102,11 +102,24 @@ p {
     margin-bottom: 0px;
 }
 .bottom {
-    height: 493px;
+    min-height: 493px;
     padding-top: 70px;
 }
 .bottom span:hover {
-color: black;
+color: black !important;
+}
+.bottom [data-key="actors"]{
+font-weight: bold;
+}
+.bottom:not(.creators) [data-key="creators"]{
+    color: #A5A5A5;
+    }
+.bottom.creators [data-key="creators"]{
+font-weight: bold;
+}
+.bottom.creators [data-key="actors"]{
+font-weight: normal;
+color: #A5A5A5;
 }
 .cast {
     padding-top: 60px;
