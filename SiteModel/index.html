@@ -1,221 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
+      <div class="row m-0">
+        <h2
+          class="
+            col-1
+            title
+            d-flex
+            justify-content-center
+            align-items-center
+            border
+            m-0
+            p-4
+          "
+        >
+          Film.
+        </h2>
+        <div class="col border-bottom d-flex align-items-center ps-4">
+          <img src="../assets/search-icon.svg" />
 
-        <div class="row m-0">
-            <h2 class="col-1 title d-flex justify-content-center align-items-center border m-0 p-4">
-                Film.
-            </h2>
-            <div class="col border-bottom d-flex align-items-center ps-4">
-
-                <img src="../assets/search-icon.svg" />
-
-
-                <input class="form-control border-0 search align-self-center ps-3" placeholder="Поиск по фильмам...">
-
-
-            </div>
-            <div class="col menu border-bottom d-flex justify-content-end align-items-center">
-                <a href="" class="border-0 menu-item"> Фильмы </a>
-                <a href="" class="border-0 menu-item ms-4"> ТВ </a>
-                <a href="" class="border-0 menu-item ms-4"> Новости </a>
-                <a href="" class="border-0 menu-item mx-4 text-nowrap"> О сервисе </a>
-            </div>
-            <button type="button"
-                class="col reg reg-log d-flex flex-grow-0 border justify-content-center align-items-center">
-                Регистрация
-            </button>
-            <button type="button" class="col-1 log reg-log d-flex border justify-content-center align-items-center">
-                Войти
-            </button>
-
+          <input
+            class="form-control border-0 search align-self-center ps-3"
+            placeholder="Поиск по фильмам..."
+          />
         </div>
-
+        <div
+          class="
+            col
+            menu
+            border-bottom
+            d-flex
+            justify-content-end
+            align-items-center
+          "
+        >
+          <a href="" class="border-0 menu-item"> Фильмы </a>
+          <a href="" class="border-0 menu-item ms-4"> ТВ </a>
+          <a href="" class="border-0 menu-item ms-4"> Новости </a>
+          <a href="" class="border-0 menu-item mx-4 text-nowrap"> О сервисе </a>
+        </div>
+        <button
+          type="button"
+          class="
+            col
+            reg reg-log
+            d-flex
+            flex-grow-0
+            border
+            justify-content-center
+            align-items-center
+          "
+          onclick="toggleModal()"
+        >
+          Регистрация
+        </button>
+        <div class="col-1 log position-relative">
+          <button
+            type="button"
+            class="
+              d-flex
+              border
+              reg-log
+              justify-content-center
+              align-items-center
+            "
+          >
+            Войти
+          </button>
+          <div class="my-dropdown pt-2 pe-2">
+            <div class="border p-3">
+              <input type="text" class="form-control mb-3" placeholder="Имя" />
+              <input type="text" class="form-control mb-3" placeholder="Фамилия" />
+              <button class="btn btn-primary">
+                Click me!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div class="border-bottom">
-            <div class="container p-0 d-flex flex-column justify-content-between">
-                <div class="center d-flex">
-                    <div class="left-center m-0">
-                        <img src="../assets/poster.png" class="poster">
-                        <div class="player border d-flex align-items-center">
-                            <img src="../assets/play.svg" class="play-button">
-                            <span class="align-self-center play-trailer">
-                                Посмотреть трейлер
-                            </span>
-                        </div>
-                    </div>
-                    <div class="right-center">
-                        <div class="film-title">
-                            Охотники за привидениями:<br>Наследники
-                        </div>
-                        <div class="search pt-1">
-                            Ghostbusters: Afterlife
-                        </div>
-                        <div class="descript pt-3">
-                            Мать-одиночка с двумя детьми-подростками селится на старой ферме<br>в Оклахоме, полученной в
-                            наследство от отца, которого она не знала.<br>Дети пытаются больше узнать о своем деде и
-                            находят
-                            автомобиль Ecto-1,<br>принадлежавший знаменитым охотникам за привидениями.
-                        </div>
-                        <div class="spec d-flex mb-5">
-                            <div class="row col-5 huy">
-                                <dt class="col-4 spec-title">Режиссер</dt>
-                                <dd class="col-8">Джейсон Райтман</dd>
-                                <dt class="col-4 spec-title">Сценарий</dt>
-                                <dd class="col-8">Дэн Эйкройд</dd>
-                                <dt class="col-4 spec-title">Премьера</dt>
-                                <dd class="col-8">09.07.2020 (РФ)</dd>
-                            </div>
-                            <div class="row col-5">
-                                <dt class="col-4 spec-title">Бюджет</dt>
-                                <dd class="col-8">1 000 000 $</dd>
-                                <dt class="col-4 spec-title">Кинопрокат</dt>
-                                <dd class="col-8">SPPR</dd>
-                                <dt class="col-4 spec-title">Премьера</dt>
-                                <dd class="col-8">09.07.2020 (РФ)</dd>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="pers d-flex align-items-center justify-content-center">
-                                92%
-                            </div>
-                            <div class="ps-4">
-                                <div class="fw-bold fs-5 pt-1">
-                                    Рейтинг зрителей
-                                </div>
-                                <p class="m-0 pt-1">Средняя оценка: <b>4.5/5</b></p>
-                                <p>Всего голосов: <b>4 350</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="border-bottom">
+        <div class="container p-0 d-flex flex-column justify-content-between">
+          <div class="center d-flex">
+            <div class="left-center m-0">
+              <img src="../assets/poster.png" class="poster" />
+              <div class="player border d-flex align-items-center">
+                <img src="../assets/play.svg" class="play-button" />
+                <span class="align-self-center play-trailer">
+                  Посмотреть трейлер
+                </span>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="bottom actors">
-                <span data-key="actors" class="fs-4">Актеры</span><span data-key="creators" class="ps-4 fs-4">Создатели</span>
-                <div class="cast row">
-
-                    <!-- <a href="https://ru.wikipedia.org/wiki/Кун,_Кэрри" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/CarryCoon.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Кэрри Кун</b>
-                                <p class="m-0">Carrie Coon</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Мюррей,_Билл" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Bill Murray.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Билл Мюррей</b>
-                                <p class="m-0">Bill Murray</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Радд,_Пол" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Paul Rudd.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Пол Радд</b>
-                                <p class="m-0">Paul Rudd</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Поттс,_Энни" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Annie Potts.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Энни Поттс</b>
-                                <p class="m-0">Annie Potts</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Грейс,_Маккенна" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Mckenna Grace.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>МакКенна Грейс</b>
-                                <p class="m-0">Mckenna Grace</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Эйкройд,_Дэн" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Dan Aykroyd.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Дэн Эйкройд</b>
-                                <p class="m-0">Dan Aykroyd</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Хадсон,_Эрни" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Ernie Hudson.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Эрни Хадсон</b>
-                                <p class="m-0">Ernie Hudson</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ru.wikipedia.org/wiki/Вулфхард,_Финн" target="_blank" class="col-3 d-flex mb-4">
-                        <img src="/assets/Finn Wolfhard.png">
-                        <div class="actor d-flex align-items-center">
-                            <div>
-                                <b>Финн Вулфард</b>
-                                <p class="m-0">Finn Wolfhard</p>
-                            </div>
-                        </div>
-                    </a> -->
+            <div class="right-center">
+              <div class="film-title">
+                Охотники за привидениями:<br />Наследники
+              </div>
+              <div class="search pt-1">Ghostbusters: Afterlife</div>
+              <div class="descript pt-3">
+                Мать-одиночка с двумя детьми-подростками селится на старой
+                ферме<br />в Оклахоме, полученной в наследство от отца, которого
+                она не знала.<br />Дети пытаются больше узнать о своем деде и
+                находят автомобиль Ecto-1,<br />принадлежавший знаменитым
+                охотникам за привидениями.
+              </div>
+              <div class="spec d-flex mb-5">
+                <div class="row col-5 huy">
+                  <dt class="col-4 spec-title">Режиссер</dt>
+                  <dd class="col-8">Джейсон Райтман</dd>
+                  <dt class="col-4 spec-title">Сценарий</dt>
+                  <dd class="col-8">Дэн Эйкройд</dd>
+                  <dt class="col-4 spec-title">Премьера</dt>
+                  <dd class="col-8">09.07.2020 (РФ)</dd>
                 </div>
+                <div class="row col-5">
+                  <dt class="col-4 spec-title">Бюджет</dt>
+                  <dd class="col-8">1 000 000 $</dd>
+                  <dt class="col-4 spec-title">Кинопрокат</dt>
+                  <dd class="col-8">SPPR</dd>
+                  <dt class="col-4 spec-title">Премьера</dt>
+                  <dd class="col-8">09.07.2020 (РФ)</dd>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div
+                  class="pers d-flex align-items-center justify-content-center"
+                >
+                  92%
+                </div>
+                <div class="ps-4">
+                  <div class="fw-bold fs-5 pt-1">Рейтинг зрителей</div>
+                  <p class="m-0 pt-1">Средняя оценка: <b>4.5/5</b></p>
+                  <p>Всего голосов: <b>4 350</b></p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="bottom actors">
+          <span data-key="actors" class="fs-4">Актеры</span
+          ><span data-key="creators" class="ps-4 fs-4">Создатели</span>
+          <div class="cast row"></div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="container pt-5">
-            <b class="fs-4">Новости по теме</b>
-            <div class="news d-flex justify-content-between">
-                <div class="news-content">
-                    <p class="mb-3">31 марта 2020</p>
-                    <b>«Морбиуса» и «Охотников<br>за привидениями» перенесли на следующий год</b>
-                </div>
-                <div class="news-content">
-                    <p class="mb-3">9 декабря 2019</p>
-                    <b>Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</b>
-                </div>
-                <div class="news-content">
-                    <p class="mb-3">11 ноября 2019</p>
-                    <b>Новые «Охотники за привидениями» обзавелись названием</b>
-                </div>
-                <div class="news-content">
-                    <p class="mb-3">19 октября 2019</p>
-                    <b>Завершились съёмки новых «Охотников за привидениями»</b>
-                </div>
-            </div>
-
-
+      <div class="container pt-5">
+        <b class="fs-4">Новости по теме</b>
+        <div class="news d-flex justify-content-between">
+          <div class="news-content">
+            <p class="mb-3">31 марта 2020</p>
+            <b
+              >«Морбиуса» и «Охотников<br />за привидениями» перенесли на
+              следующий год</b
+            >
+          </div>
+          <div class="news-content">
+            <p class="mb-3">9 декабря 2019</p>
+            <b
+              >Наследники: Вышел дебютный трейлер новых «Охотников за
+              привидениями»</b
+            >
+          </div>
+          <div class="news-content">
+            <p class="mb-3">11 ноября 2019</p>
+            <b>Новые «Охотники за привидениями» обзавелись названием</b>
+          </div>
+          <div class="news-content">
+            <p class="mb-3">19 октября 2019</p>
+            <b>Завершились съёмки новых «Охотников за привидениями»</b>
+          </div>
         </div>
+      </div>
     </footer>
-<script src="index.js"></script>
-</body>
-
+    <div class="my-modal">
+      <div class="my-modal__body">
+        <div class="my-modal__title p-3 border-bottom">Title</div>
+        <div class="my-modal__content p-3">
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Имя" />
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Фамилия"
+            />
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Отчество"
+            />
+          </form>
+        </div>
+        <div class="my-modal__footer p-3 border-top">
+          <button class="btn btn-primary" onclick="toggleModal()">
+            Click me!
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
