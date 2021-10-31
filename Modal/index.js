@@ -12,3 +12,8 @@ function deleteBlock() {
   block.remove();
   toggleModal();
 }
+let addBlock = document.querySelector('.add-block');
+let addDropdown = document.querySelector('.add-dropdown');
+addBlock.onclick = function() {
+addDropdown.classList.toggle("show");
+}
