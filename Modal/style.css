@@ -21,7 +21,7 @@
 .block:hover i {
   display: flex;
 }
-.my-backdrop{
+.my-backdrop {
     display: none;
     align-items: center;
     justify-content: center;
@@ -34,6 +34,24 @@
 .my-modal{
     background-color: white;
 }
-.my-backdrop.show{
+.my-backdrop.show {
     display: flex;
+}
+.add {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.add-dropdown {
+  display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.add-dropdown.show {
+  display: flex;
 }
